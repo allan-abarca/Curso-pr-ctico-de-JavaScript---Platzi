@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./discount_icon.png">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Percentages and discounts</title>
+</head>
+<body>
+    <header>
+        <h1>Percentages and discounts</h1>
+    </header>
+
+    <section>
+        <h2>Calculate the price to pay for your discounted products</h2>
+
+        <form action="">
+            <label for="input_price">Product price: </label>
+            <input type="number" id="input_price" placeholder="$">
+
+            <label for="input_discount">Discount: </label>
+            <input type="number" id="input_discount" placeholder="%">
+
+            <button type="button" onclick="run_discount_calculator()">Calculate discounted price</button>
+
+            <p id="final_message"></p>
+        </form>
+    </section>
+
+    <script src="./discounts.js"></script>
+</body>
+</html>
