@@ -5,11 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="geometry.png">
+    <link rel="stylesheet" href="style.css">
     <title>Geometric Calculator</title>
 </head>
 <body>
-    <h1>Geometric Calculator</h1>
+    <header>
+        <h1>Geometric Calculator</h1>
+
+        <p>Lets calculate areas and perimeters</p>
+    </header>
     
+    <section>
+        <h2>Choose the geometric figure and type of operation</h2>
+        <!-- square -->
+        <div class="shape"> 
+            <form action="">
+                <label for="square_input">
+                    Square side length: (cm)
+                </label>
+
+                <input id="square_input" type="number" placeholder="Side">
+                <button type="button" onclick="run_square_perimeter()">Calculate perimeter</button>
+                <button type="button" onclick="run_square_area()">Calculate area</button>
+            </form>
+        </div>
+        <!-- triangle -->
+        <div class="shape"> 
+            <form action="">
+                <label for="triangle_input">
+                    Triangle side length: (cm)
+                </label>
+
+                <input id="triangle_input_side1" type="number" placeholder="Side 1">
+                <input id="triangle_input_side2" type="number" placeholder="Side 2">
+                <input id="triangle_input_base" type="number" placeholder="Base">
+                <input id="triangle_input_height" type="number" placeholder="Height">
+                <button type="button" onclick="run_triangle_perimeter()">Calculate perimeter</button>
+                <button type="button" onclick="run_triangle_area()">Calculate area</button>
+                <button type="button" onclick="run_triangle_isosceles_height()">Calculate height</button>
+            </form>
+        </div>
+        <!-- circle -->
+        <div class="shape">
+            <form action="">
+                <label for="circle_input">
+                    Circle radio length: (cm)
+                </label>
+
+                <input id="circle_input" type="number" placeholder="Radio">
+                <button type="button" onclick="run_circle_perimeter()">Calculate perimeter</button>
+                <button type="button" onclick="run_circle_area()">Calculate area</button>
+            </form>
+        </div>
+    </section>
+
     <script src="math.js"></script>
 </body>
 </html>
